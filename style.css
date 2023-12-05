@@ -1,0 +1,84 @@
+body{
+    background-image: url(/6MU_ebLiOLQ.jpg);
+    background-repeat: no-repeat5;
+    height: 500px;
+}
+
+.marfa {
+	position: absolute;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-left: 10px;
+	bottom: 0px;
+	width: 200px;
+	height: fit-content;
+	animation: animationCar infinite 4s; 
+}
+
+.wheel {
+	background-color: rgb(255, 0, 0);
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+}
+
+.wheel-group {
+	width: 210px;
+	height: fit-content;
+
+	position: relative;
+	top: -30px;
+
+	z-index: 3;
+	display: flex;
+	justify-content: space-between;
+}
+
+.carking {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	position: relative;
+}
+
+.mashina{
+	width: 130px;
+	height: 65px;
+	background-color: rgb(255, 169, 205);
+	border-radius: 10%;
+
+	position: relative;
+	right: 18px;
+	top: 8px;
+	z-index: 0;
+}
+
+.karina {
+	width: 70px;
+	height: 40px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 12px;
+	position: absolute;
+	top: 10px;
+	left: 75px;
+	z-index: 1;
+}
+
+.inro {
+	width: 210px;
+	height: 80px;
+	background-color: rgb(255, 112, 172);
+	border-radius: 10%;
+	z-index: 2;
+}
+@keyframes animationCar {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: calc(100vw - 250px);
+	}
+}
